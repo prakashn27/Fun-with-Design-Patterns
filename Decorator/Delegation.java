@@ -112,9 +112,6 @@ class D1 implements I1 {
 	public D1(I11 objI11) {
 		this2 = objI11;
 	}
-//	public D1(I111 objI111) {
-//		this2 = objI111;
-//	}
 	@Override
 	public int m1() {
 		// return a1 + p1(100) + q1(100);
@@ -143,8 +140,7 @@ class D11 implements I11 {
 	public D11() {
 		objD1 = new D1(this);
 	}
-			
-//	I1 objD1 = new D1();
+	
 	I1 this2 = null;
 	public D11(I111 objD111) {
 		objD1 = new D1(this);
@@ -166,19 +162,16 @@ class D11 implements I11 {
 
 	@Override
 	public int p1(int m) {
-		// return m * a1;
 		return this2.p1(m);
 	}
 
 	@Override
 	public int q1(int m) {
-		// return m + a11;
 		return m + geta11();
 	}
 
 	@Override
 	public int m11() {
-		// return m1() + q1(200);
 		return m1() + this2.q1(200);
 	}
 
@@ -197,13 +190,11 @@ class D111 implements I111 {
 	
 	@Override
 	public int m11() {
-		// TODO Auto-generated method stub
 		return objD11.m11();
 	}
 
 	@Override
 	public int geta11() {
-		// TODO Auto-generated method stub
 		return objD11.geta11();
 	}
 
@@ -214,25 +205,21 @@ class D111 implements I111 {
 
 	@Override
 	public int geta1() {
-		// TODO Auto-generated method stub
 		return objD11.geta1();
 	}
 
 	@Override
 	public int p1(int m) {
-		// return m * a1 * a11;
 		return m * geta1() * geta11();
 	}
 
 	@Override
 	public int q1(int m) {
-		// TODO Auto-generated method stub
 		return objD11.q1(m);
 	}
 
 	@Override
 	public int m111() {
-		// return m1() + m11() + a111;
 		return m1() + m11() + a111;
 	}	
 }

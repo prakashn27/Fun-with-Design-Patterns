@@ -6,7 +6,7 @@ Some example implementations of design patterns I have encountered
 ####Patterns implemented
 
 1) Decorator     
-2) Iterator 
+2) Iterator     
 3) Singleton
 
 
